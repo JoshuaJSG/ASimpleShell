@@ -37,7 +37,7 @@ void introduction(){
         printf("COMP2211 Simplified Shell by sc16jsg \n");
       }
 
-      if(strcmp(commandLine, "help\n")==0){        // If the command is "info", print the print statement
+      if(strcmp(commandLine, "help\n")==0){        // If the command is "help", print the print statement
         printf("\n\tAvailable commands: \n");
         printf("\tinfo - Infomation about who created the shell\n");
         printf("\texit - Exit from the current shell\n");
@@ -49,15 +49,9 @@ void introduction(){
           break;
       }
 
-      if(strcmp(commandLine, "pwd\n")==0){         //If the command is "pwd" use function against PWD and print the print statement.
+      if(strcmp(commandLine, "pwd\n")==0){         //If the command is "pwd" use function against PWD and print working directory.
         getcwd(pwd, sizeof(pwd));
         printf("current directory: %s\n", pwd);
-      }
-
-
-
-      if (strcmp(commandLine, "cd") == 0){   // Was buffer, not tkn
-
       }
   }
 
